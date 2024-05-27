@@ -1,5 +1,5 @@
 <script setup>
-import Hero from '../components/Hero.vue'
+import Hero from '../components/Hero'
 import Contact from '../components/Contact.vue'
 import OneImageTextFlex from '@/components/OneImageTextFlex.vue';
 const missionandvission =

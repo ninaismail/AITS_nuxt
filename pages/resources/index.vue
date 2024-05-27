@@ -4,7 +4,7 @@ import PostsCarousel from '../../components/PostsCarousel.vue';
 import InnerHero from '../../components/InnerHero.vue';
 import InsideBody from '../../components/InsideBody.vue';
 import WebinarsList from '../../components/WebinarsList.vue';
-import { getFeaturedBlogPosts } from '../../helpers/api'
+import { getFeaturedBlogPosts } from '../../utils/api'
 import OneImageTextFlex from '../../components/OneImageTextFlex.vue';
 const blogposts = getFeaturedBlogPosts()
 const whitepaper ={ 

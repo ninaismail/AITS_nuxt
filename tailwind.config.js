@@ -10,9 +10,6 @@ export default {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        body: ['Aktifo'],
-      },
       colors: {
         bg: 'black',
         bg2: '#32527B', //blue

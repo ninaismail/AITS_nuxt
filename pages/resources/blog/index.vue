@@ -1,6 +1,6 @@
 <script setup>
 import PostsList from '../../../components/PostsList.vue';
-import { getBlogPosts } from '../../../helpers/api'
+import { getBlogPosts } from '../../../utils/api'
 const blogposts = getBlogPosts()
 
 </script>

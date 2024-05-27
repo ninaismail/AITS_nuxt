@@ -11,7 +11,7 @@ import IndustriesGrid from '../../components/IndustriesGrid.vue'
 import Testimonials from '../../components/Testimonials.vue'
 import InsideBody from '../../components/InsideBody.vue'
 import PostsGrid from '../../components/PostsGrid.vue'
-import { getSuccessStories } from '../../helpers/api'
+import { getSuccessStories } from '../../utils/api'
 
 const industries = [
 { id: 1, title: 'Smart Cities', description:"Smart Cities are at the forefront of innovation to enhance the quality of life for residents and optimize city operations. AITS is pioneering the transformation of urban landscapes by providing advanced software solutions that integrate information and communication technology (ICT) to drive efficiency, sustainability, and citizen-centric services. From smart infrastructure management to intelligent transportation systems and data-driven decision-making, our solutions empower cities to harness the power of real-time data for better resource allocation and enhanced service delivery.", icon:industriesiconC },

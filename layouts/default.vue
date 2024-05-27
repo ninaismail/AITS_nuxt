@@ -4,6 +4,6 @@ import Footer from './Footer.vue';
 </script>
 <template>
     <Header/>
-      <slot />
+      <NuxtPage />
     <Footer/>
   </template>
