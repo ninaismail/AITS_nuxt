@@ -2,9 +2,7 @@
 import axios from 'axios';
 import { ref, reactive, watch } from 'vue'
 import { Checkbox } from 'vue-recaptcha';
-import { useRecaptchaProvider } from 'vue-recaptcha'
 
-useRecaptchaProvider()
 const ReCaptchaValid = ref(false)
 const hasErrorMessages = ref(false)
 const loading = ref(null)

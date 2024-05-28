@@ -3,6 +3,9 @@ import { routes } from "vue-router/auto-routes";
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  routeRules: {
+    '/contact': { ssr: false }
+  },
   css: ['./assets/css/tailwind.css'],
   postcss: {
     plugins: {
@@ -20,5 +23,12 @@ export default defineNuxtConfig({
   build: {
     analyze:true
   },
-  modules: ['@vueuse/motion/nuxt']
+  modules: ['@vueuse/motion/nuxt','vue-recaptcha/nuxt'],
+  runtimeConfig: {
+    public: {
+      recaptcha: {
+        v2SiteKey: process.env.YOUR_V2_SITEKEY_HERE,
+      },
+    },
+  },
 })
