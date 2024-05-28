@@ -29,6 +29,6 @@ export default defineNuxtConfig({
       recaptcha: {
         v2SiteKey: '6LdrDcYpAAAAAAKprMmCkM5ESKdgGcLAwmr016wl',
       },
-    },
-  },
+    }
+  }
 })
