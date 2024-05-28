@@ -36,7 +36,7 @@ const sociallinks = [
         </svg>
             <h1 v-if="isOpen" class="text-xl text-accent1">&#10005;</h1>
     </button>
-    <Teleport to="#portals">
+    <Teleport to="#teleports">
         <Transition>
         <div v-if="isOpen" class="sm:w-80 w-64 sm:aspect-square p-6 fixed z-[9] right-0 top-1/2 transform -translate-y-1/2 border border-accent1/30 bg-gradient-to-r from-accent1/10 to-accent1/20 backdrop-blur-[16px] space-y-6 rounded-[16px]">
             <h1 class="text-lg text-accent1 font-[400] h-1/4">Contact Info</h1>

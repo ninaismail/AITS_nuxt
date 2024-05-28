@@ -23,7 +23,7 @@ defineProps({
                     <span class="inline ps-2">{{ item.title }}</span>                
                     <span class="inline ps-2">{{ item.address }}</span>                
                 </h2>
-                <a prefetch="false" v-show="item.phone" :id="'call-' + item.title + 'location'" :aria-label="'Call' + item.title + 'Location'" :href="'tel:'+ item.phone" class="cursor-pointer max-sm:text-[14px] font-[200] text-accent1 text-justify hover:brightness-75">
+                <NuxtLink external v-show="item.phone" :id="'call-' + item.title + 'location'" :aria-label="'Call' + item.title + 'Location'" :href="'tel:'+ item.phone" class="cursor-pointer max-sm:text-[14px] font-[200] text-accent1 text-justify hover:brightness-75">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="white" class="inline" xmlns="http://www.w3.org/2000/svg">
                     <mask id="mask0_863_319" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
                     <rect width="20" height="20" fill="#D9D9D9"/>
@@ -33,7 +33,7 @@ defineProps({
                     </g>
                     </svg>
                     <span class="inline ps-2">{{item.phone}}</span>
-                </a>
+                </NuxtLink>
                 <h2 v-show="item.fax" class="max-sm:text-[14px] font-[200] text-accent1 text-justify hover:brightness-75">
                     <svg width="25" height="20" viewBox="0 0 25 20" fill="none" stroke="white" class="inline" xmlns="http://www.w3.org/2000/svg">
                     <mask id="mask0_857_567" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="20">
@@ -56,7 +56,7 @@ defineProps({
                     </svg>                 
                     <span class="inline ps-2">{{ item.poBOX }}</span>
                 </h2>
-                <a prefetch="false" v-show="item.email" :id="'email-' + item.title + 'location'" :aria-label="'Email' + item.title + 'Location'" :href="'mailto:'+ item.email" class="cursor-pointer max-sm:text-[14px] font-[200] text-accent1 text-justify hover:brightness-75">
+                <NuxtLink external v-show="item.email" :id="'email-' + item.title + 'location'" :aria-label="'Email' + item.title + 'Location'" :href="'mailto:'+ item.email" class="cursor-pointer max-sm:text-[14px] font-[200] text-accent1 text-justify hover:brightness-75">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" class="inline" xmlns="http://www.w3.org/2000/svg">
                     <mask id="mask0_863_301" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
                     <rect width="24" height="24" fill="#D9D9D9"/>
@@ -66,8 +66,8 @@ defineProps({
                     </g>
                     </svg> 
                     <span class="inline ps-2">{{item.email}}</span>
-                </a>
-                <a prefetch="false" v-show="item.website" id="go-href-aits-website" aria-label="go href AITS website" :href="item.website" class="cursor-pointer max-sm:text-[14px] font-[200] text-accent1 text-justify hover:brightness-75">
+                </NuxtLink>
+                <NuxtLink external v-show="item.website" id="go-href-aits-website" aria-label="go href AITS website" :href="item.website" class="cursor-pointer max-sm:text-[14px] font-[200] text-accent1 text-justify hover:brightness-75">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="white" class="inline" xmlns="http://www.w3.org/2000/svg">
                     <mask id="mask0_863_295" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
                     <rect width="20" height="20" fill="#D9D9D9"/>
@@ -77,7 +77,7 @@ defineProps({
                     </g>
                     </svg>
                     <span class="inline ps-2">www.aitsmena.com</span>
-                </a>
+                </NuxtLink>
             </li>
         </ul>
     </section>
