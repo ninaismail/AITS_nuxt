@@ -5,7 +5,7 @@
     <!-- center -->
     <NuxtImg src="/images/insidepages/elements/centertop.webp" alt="AITS" width="1440" height="1444" center cover responsive loading="lazy" 
     class="absolute right-0 hidden transform sm:block top-1/3 -translate-y-1/3"/>
-    <NuxtImg src="../images/insidepages/elements/centermiddle.webp" alt="AITS" width="1116" height="1239" center cover responsive loading="lazy" 
+    <NuxtImg src="/images/insidepages/elements/centermiddle.webp" alt="AITS" width="1116" height="1239" center cover responsive loading="lazy" 
     class="absolute right-0 hidden transform sm:block -translate-y-2/3 top-2/3"/>
 
     <!-- right -->
