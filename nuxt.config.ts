@@ -27,7 +27,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       recaptcha: {
-        v2SiteKey: process.env.YOUR_V2_SITEKEY_HERE,
+        v2SiteKey: '6LdrDcYpAAAAAAKprMmCkM5ESKdgGcLAwmr016wl',
       },
     },
   },
