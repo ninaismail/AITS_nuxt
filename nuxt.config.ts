@@ -23,12 +23,31 @@ export default defineNuxtConfig({
   build: {
     analyze:true
   },
-  modules: ['@vueuse/motion/nuxt', 'vue-recaptcha/nuxt', "@nuxt/image"],
+  modules: ['@vueuse/motion/nuxt', 'vue-recaptcha/nuxt', "@nuxt/image", "@nuxt/fonts"],
   runtimeConfig: {
     public: {
       recaptcha: {
         v2SiteKey: '6LdrDcYpAAAAAAKprMmCkM5ESKdgGcLAwmr016wl',
       },
+    },
+    fonts: {
+      // You can provide overrides for individual families
+      families: [
+        { name: 'aktifo', src: 'url(/fonts/Aktifo/Aktifo-A Book.woff2)' },
+      ],
+      assets: {
+        // The prefix where your fonts will be accessible
+        prefix: '/_fonts'
+      },
+      // You can customize the order in which providers are checked.
+      priority: ['aktifo'],
+      // You can also set a single provider, which is a shortcut for disabling all but one provider
+      provider: 'fontshare',
+      experimental: {
+        // You can also enable support for processing CSS variables for font family names.
+        // This may have a performance impact.
+        processCSSVariables: true,
+      }
     }
   }
 })
