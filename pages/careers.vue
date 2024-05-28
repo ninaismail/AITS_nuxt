@@ -68,5 +68,5 @@ const benefits = [
       <BenefitsFlexWithBlur sectiontitle="Employees Benefits" 
       sectiondescription="AITS, where talent thrives and ambitions are realized. We value our employees and are committed to their growth and well-being. Explore the unique advantages of being part of our team, encompassing:" :data='benefits'/>
       <InsideBody/>
-    </section>    
+    </section>
 </template>
