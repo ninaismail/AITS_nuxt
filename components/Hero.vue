@@ -43,7 +43,7 @@
             delay: 800,
             duration: 600
           },
-        }" class="absolute top-0 z-1 left-1/2 max-sm:top-32 max-sm:-translate-y-1/4 max-sm:h-[400px]" />
+        }" class="absolute top-0 z-1 left-1/2 -translate-x-1/2 max-sm:top-32 max-sm:-translate-y-1/4 max-sm:h-[400px]" />
       
       <!-- left layer -->
       <NuxtImg src="/images/hero/elements/lefttop_small.webp" alt="AITS" width="712" height="964" center cover responsive loading="eager"
