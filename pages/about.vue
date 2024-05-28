@@ -7,7 +7,6 @@ import ImageTextFlexFilters from '../components/ImageTextFlexFilters.vue';
 // import teammember1 from '/images/insidepages/about/team/teammember1.webp'
 // import teammember2 from '/images/insidepages/about/team/teammember2.webp'
 // import teammember3 from '/images/insidepages/about/team/teammember3.webp'
-import ImagesFlex from '../components/ImagesFlex.vue';
 import ic2 from '/images/testimonies/partners/ic2.webp'
 import aveva from '/images/testimonies/partners/aveva.webp'
 import improvement from '/images/insidepages/about/csr/improvement.webp'

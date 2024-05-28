@@ -23,7 +23,7 @@ export default defineNuxtConfig({
   build: {
     analyze:true
   },
-  modules: ['@vueuse/motion/nuxt','vue-recaptcha/nuxt'],
+  modules: ['@vueuse/motion/nuxt', 'vue-recaptcha/nuxt', "@nuxt/image"],
   runtimeConfig: {
     public: {
       recaptcha: {

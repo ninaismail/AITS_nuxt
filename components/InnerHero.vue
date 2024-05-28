@@ -10,7 +10,7 @@ defineProps({
 </script>
 <template>
     <section class="relative flex flex-col justify-center items-center -mt-[40px] md:h-[90vh] min-h-[70vh]">
-        <img :src="pagebanner" :alt="'AITS' + pagetitle" width="1140" height="718" center cover responsive loading="eager" class="absolute inset-0 z-[-1] w-full h-full aspect-[1.59/1]"/>
+        <NuxtImg :src="pagebanner" :alt="'AITS' + pagetitle" width="1140" height="718" center cover responsive loading="eager" class="absolute inset-0 z-[-1] w-full h-full aspect-[1.59/1]"/>
         <div class="absolute w-11/12 mx-auto md:transform md:-translate-y-1/2 md:top-1/2 z-[1] 2xl:w-8/12 lg:w-10/12 top-2/3 -translate-y-2/3">
             <div class="md:h-[85%] min-h-[40vh] space-y-6 rounded-[16px] flex flex-col justify-center p-6 items-center mx-auto bg-gradient-to-r from-accent1/10 to-accent1/20 backdrop-blur-[16px]">
                 <img v-if="isAbout" :src="logo" alt="AITS logo" width="443" height="148" cover center responsive loading="eager"/>    
@@ -21,15 +21,15 @@ defineProps({
         </div>
         <!-- Highlights -->
             <!-- top left -->
-            <img src="/images/banners/elements/topleft.webp" alt="AITS" width="909" height="683" center cover responsive loading="lazy"
+            <NuxtImg src="/images/banners/elements/topleft.webp" alt="AITS" width="909" height="683" center cover responsive loading="lazy"
             class="absolute inset-0 z-1"/>
 
             <!-- top right -->
-            <img src="/images/banners/elements/topright.webp" alt="AITS" width="1232" height="792" center cover responsive loading="lazy"
+            <NuxtImg src="/images/banners/elements/topright.webp" alt="AITS" width="1232" height="792" center cover responsive loading="lazy"
             class="absolute top-0 right-0 z-1"/> 
 
             <!-- bottom right -->
-            <img src="/images/banners/elements/bottomright.webp" alt="AITS" width="728" height="1074" center cover responsive loading="lazy"
+            <NuxtImg src="/images/banners/elements/bottomright.webp" alt="AITS" width="728" height="1074" center cover responsive loading="lazy"
             class="absolute bottom-0 right-0 z-1"/>
     </section>
 </template>
