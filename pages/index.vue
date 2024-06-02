@@ -27,7 +27,7 @@ const valuesandcommitments =
 <meta property="og:type" content="website">
 <meta property="og:title" content="AITS - Industrial Software Solutions And Digital Services Tailored To Your Business">
 <meta property="og:description" content="AITS transforms businesses like yours through innovative tech solutions tailored to your unique needs. Book your free consultation call to get started!">
-<meta property="og:image" content="https://aitsmena-testtoproduction.netlify.app/aits-open-graph-bigger.png">
+<meta property="og:image" content="https://aitsmena-testtoproduction.netlify.app/aits-open-graph-bigger.jpg">
 
 <!-- Twitter Meta Tags -->
 <meta name="twitter:card" content="summary_large_image">
@@ -35,7 +35,7 @@ const valuesandcommitments =
 <meta property="twitter:url" content="https://aitsmena-testtoproduction.netlify.app/">
 <meta name="twitter:title" content="AITS - Industrial Software Solutions And Digital Services Tailored To Your Business">
 <meta name="twitter:description" content="AITS transforms businesses like yours through innovative tech solutions tailored to your unique needs. Book your free consultation call to get started!">
-<meta name="twitter:image" content="https://aitsmena-testtoproduction.netlify.app/aits-open-graph-bigger.png">
+<meta name="twitter:image" content="https://aitsmena-testtoproduction.netlify.app/aits-open-graph-bigger.jpg">
 
 <!-- Meta Tags Generated via https://www.opengraph.xyz -->    
 </head>
