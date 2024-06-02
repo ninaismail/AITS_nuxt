@@ -25,7 +25,7 @@ const valuesandcommitments =
 <meta property="og:site_name" content="AITS">
 <meta property="og:title" content="AITS - Industrial Software Solutions And Digital Services Tailored To Your Business" />
 <meta property="og:description" content="AITS transforms businesses like yours through innovative tech solutions tailored to your unique needs. Book your free consultation call to get started!" />
-<meta property="og:image" itemprop="image" content="https://aitsmena-testtoproduction.netlify.app/aits-open-graph-bigger.jpg">
+<meta property="og:image:secure_url" itemprop="image" content="https://aitsmena-testtoproduction.netlify.app/aits-open-graph-bigger.jpg">
 <meta property="og:type" content="website" />
 <meta property="og:updated_time" content="1440432930" />
 
