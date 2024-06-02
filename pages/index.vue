@@ -18,7 +18,7 @@ const valuesandcommitments =
 </script>
 <template>
    <head>
-    <meta name="image" property="og:image" content="https://aitsmena-testtoproduction.netlify.app/aits-open-graph.jpg">
+    <meta name="image" property="og:image" content="https://aitsmena-testtoproduction.netlify.app/aits-open-graph-bigger.jpg">
     <title>AITS - Industrial Software Solutions And Digital Services Tailored To Your Business</title>
     <meta property="og:title" content="AITS - Industrial Software Solutions And Digital Services Tailored To Your Business">
     <meta property="og:description" content="AITS transforms businesses like yours through innovative tech solutions tailored to your unique needs. Book your free consultation call to get started!">
