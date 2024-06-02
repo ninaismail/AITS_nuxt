@@ -17,15 +17,28 @@ const valuesandcommitments =
 
 </script>
 <template>
-   <head>
-    <meta name="image" property="og:image" content="https://aitsmena-testtoproduction.netlify.app/aits-open-graph-bigger.jpg">
-    <title>AITS - Industrial Software Solutions And Digital Services Tailored To Your Business</title>
-    <meta property="og:title" content="AITS - Industrial Software Solutions And Digital Services Tailored To Your Business">
-    <meta property="og:description" content="AITS transforms businesses like yours through innovative tech solutions tailored to your unique needs. Book your free consultation call to get started!">
-    <meta property="description" content="AITS transforms businesses like yours through innovative tech solutions tailored to your unique needs. Book your free consultation call to get started!">
-    <meta property="og:type" content="website" >
-    <meta property="og:url" content="https://aitsmena-testtoproduction.netlify.app/" >  
-    </head>
+<head>
+<!-- HTML Meta Tags -->
+<title>AITS - Industrial Software Solutions And Digital Services Tailored To Your Business</title>
+<meta name="description" content="AITS transforms businesses like yours through innovative tech solutions tailored to your unique needs. Book your free consultation call to get started!">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://aitsmena-testtoproduction.netlify.app/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AITS - Industrial Software Solutions And Digital Services Tailored To Your Business">
+<meta property="og:description" content="AITS transforms businesses like yours through innovative tech solutions tailored to your unique needs. Book your free consultation call to get started!">
+<meta property="og:image" content="https://aitsmena-testtoproduction.netlify.app/aits-open-graph-bigger.png">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="aitsmena-testtoproduction.netlify.app">
+<meta property="twitter:url" content="https://aitsmena-testtoproduction.netlify.app/">
+<meta name="twitter:title" content="AITS - Industrial Software Solutions And Digital Services Tailored To Your Business">
+<meta name="twitter:description" content="AITS transforms businesses like yours through innovative tech solutions tailored to your unique needs. Book your free consultation call to get started!">
+<meta name="twitter:image" content="https://aitsmena-testtoproduction.netlify.app/aits-open-graph-bigger.png">
+
+<!-- Meta Tags Generated via https://www.opengraph.xyz -->    
+</head>
   <Hero/>
   <OneImageTextFlex sectiontitle="Mission and Vision" :item="missionandvission"/>
   <OneImageTextFlex sectiontitle="Values and Commitments" :item="valuesandcommitments" reverse/>
