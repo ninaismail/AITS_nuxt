@@ -4,6 +4,7 @@ import { useHead } from '@unhead/vue'
 const image1Url = '/images/hero/elements/centermiddle.webp';
 const image2Url = '/images/hero/elements/leftmiddleoposite_small.webp';
 const image3Url = '/images/hero/elements/leftbottom_small.webp';
+const image4Url = '/images/hero/elements/righttop_small.webp';
 
 useHead({
   link: [
@@ -24,6 +25,12 @@ useHead({
       as: 'image',
       type: 'image/webp',
       href: image3Url,
+    },
+    {
+      rel: 'preload',
+      as: 'image',
+      type: 'image/webp',
+      href: image4Url,
     },
   ],
 });
