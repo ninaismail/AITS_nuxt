@@ -96,7 +96,7 @@ useHead({
       <NuxtImg src="/images/hero/elements/leftmiddle_small.webp" alt="AITS" width="824" height="1096" center cover responsive loading="eager"
       class="absolute left-0 transform md:-translate-y-1/2 z-1 md:top-1/2 top-2/3 -translate-y-2/3  max-sm:h-[400px]"/>
       <NuxtImg src="/images/hero/elements/leftmiddleoposite_small.webp" alt="AITS" width="962" height="1753" center cover responsive loading="eager"
-      class="absolute left-0 transform md:-translate-y-1/2 z-1 md:top-1/2 top-2/3 -translate-y-2/3 max-sm:h-[400px]"/>    
+      class="absolute left-0  z-1 md:top-1/2 top-2/3  max-sm:h-[400px]"/>    
       <NuxtImg src="/images/hero/elements/leftbottom_small.webp" alt="AITS" width="616" height="1104" center cover responsive loading="eager"
       class="absolute left-0 z-3 top-[100%]"/>
  
