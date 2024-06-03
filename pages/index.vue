@@ -2,12 +2,7 @@
 import Hero from '../components/Hero'
 import OneImageTextFlex from '../components/OneImageTextFlex.vue';
 import ContactUs from '~/components/ContactUs.vue';
-import { useHead,useSeoMeta } from '@unhead/vue'
-
-const image1Url = '/images/hero/elements/centermiddle.webp';
-const image2Url = '/images/hero/elements/leftmiddle (1).webp';
-const image3Url = '/images/hero/elements/leftmiddleoposite (1).webp';
-const image4Url = '/images/hero/elements/lefttop (1).webp';
+import { useSeoMeta } from '@unhead/vue'
 
 const missionandvission =
   {
@@ -42,34 +37,6 @@ useSeoMeta({
   twitterCard: 'summary',
 })
 
-useHead({
-  link: [
-    {
-      rel: 'preload',
-      as: 'image',
-      type: 'image/webp', // Assuming WebP format, adjust if needed
-      href: image1Url,
-    },
-    {
-      rel: 'preload',
-      as: 'image',
-      type: 'image/webp',
-      href: image2Url,
-    },
-    {
-      rel: 'preload',
-      as: 'image',
-      type: 'image/webp',
-      href: image3Url,
-    },
-    {
-      rel: 'preload',
-      as: 'image',
-      type: 'image/webp',
-      href: image4Url,
-    },
-  ],
-});
 </script>
 <template>
   <Hero/>

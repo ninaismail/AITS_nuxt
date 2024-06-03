@@ -1,3 +1,33 @@
+<script setup>
+import { useHead } from '@unhead/vue'
+
+const image1Url = '/images/hero/elements/centermiddle.webp';
+const image2Url = '/images/hero/elements/leftmiddleoposite_small.webp';
+const image3Url = '/images/hero/elements/leftbottom_small.webp';
+
+useHead({
+  link: [
+    {
+      rel: 'preload',
+      as: 'image',
+      type: 'image/webp', // Assuming WebP format, adjust if needed
+      href: image1Url,
+    },
+    {
+      rel: 'preload',
+      as: 'image',
+      type: 'image/webp',
+      href: image2Url,
+    },
+    {
+      rel: 'preload',
+      as: 'image',
+      type: 'image/webp',
+      href: image3Url,
+    },
+  ],
+});
+</script>
 <template>
   <section id="AITSHero" class="relative flex flex-col flex-wrap items-center h-full px-6 mx-auto"> 
     <!-- headline + cta -->
