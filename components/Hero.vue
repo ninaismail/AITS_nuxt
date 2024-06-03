@@ -1,49 +1,16 @@
 <script setup>
-import { useHead } from '@unhead/vue'
-
-const image1Url = '/images/hero/elements/centermiddle.webp';
-const image2Url = '/images/hero/elements/leftmiddleoposite_small.webp';
-const image3Url = '/images/hero/elements/leftbottom_small.webp';
-const image4Url = '/images/hero/elements/righttop_small.webp';
-
-useHead({
-  link: [
-    {
-      rel: 'preload',
-      as: 'image',
-      type: 'image/webp', // Assuming WebP format, adjust if needed
-      href: image1Url,
-    },
-    {
-      rel: 'preload',
-      as: 'image',
-      type: 'image/webp',
-      href: image2Url,
-    },
-    {
-      rel: 'preload',
-      as: 'image',
-      type: 'image/webp',
-      href: image3Url,
-    },
-    {
-      rel: 'preload',
-      as: 'image',
-      type: 'image/webp',
-      href: image4Url,
-    },
-  ],
-});
+import { RouterLink } from 'vue-router'
 </script>
+
 <template>
   <section id="AITSHero" class="relative flex flex-col flex-wrap items-center h-full px-6 mx-auto"> 
     <!-- headline + cta -->
     <div class="sm:10/12 w-11/12 flex flex-col justify-center items-center mx-auto gap-6 h-[90vh] lg:pt-40 pt-40">
       <h1 class="text-accent1 uppercase 2xl:text-7xl lg:text-6xl md:text-5xl sm:text-4xl text-[30px] text-center font-[700]">Welcome to AITS</h1>
       <p class="font-[200] max-sm:text-[14px] text-justify text-accent2 2xl:w-5/12 px-4 sm:w-2/3" style="text-align-last: center;">
-        Looking for a trusted partner in the industrial software field? AITS empowers industries like yours to thrive through innovative tech solutions tailored to your unique needs.</p>
-      <NuxtLink id="go-to-contact-page" aria-label="go to contact page" to="/contact" class="relative z-[4] block w-fit cursor-pointer px-4 py-3 max-sm:text-[14px] font-[200] text-center rounded-[8px] text-accent1 bg-bg2 hover:brightness-125">Get Started</NuxtLink>
-      <NuxtImg src="/images/hero/arrow.webp" alt="AITS" width="178" height="145" center cover responsive  loading="eager" class="w-[100px] max-md:w-[50px]"
+        Looking for a trusted industrial software partner? AITS empowers people like you to thrive through innovative tech solutions tailored to your unique needs. </p>
+      <!-- <RouterLink id="go-to-contact-page" aria-label="go to contact page" to="/contact" class="relative z-[4] block w-fit cursor-pointer px-4 py-3 max-sm:text-[14px] font-[200] text-center rounded-[8px] text-accent1 bg-bg2 hover:brightness-125">Get Started</RouterLink> -->
+      <img src="/images/hero/arrow.webp" alt="AITS" width="178" height="145" center cover responsive  preload class="w-[100px] max-md:w-[50px]"
       v-motion  
         :initial="{
           x:0,
@@ -61,7 +28,7 @@ useHead({
     </div>
     <!-- animation elements -->
       <!-- middle layor -->
-     <NuxtImg src="/images/hero/elements/centermiddle.webp" alt="AITS" width="1253" height="1239" center cover responsive loading="eager"
+     <img src="/images/hero/elements/centermiddle.webp" alt="AITS" width="1253" height="1239" center cover responsive preload
       v-motion  
         :initial="{
           opacity: 1,
@@ -79,10 +46,10 @@ useHead({
             delay: 800,
             duration: 600
           },
-        }" class="absolute top-0 z-1 left-1/2 -translate-x-1/2 max-sm:top-32 max-sm:-translate-y-1/4 max-sm:h-[400px]" />
+        }" class="absolute top-0 z-1 left-1/2 max-sm:top-10 max-sm:-translate-y-1/4 max-sm:h-[400px]" />
       
       <!-- left layer -->
-      <NuxtImg src="/images/hero/elements/lefttop_small.webp" alt="AITS" width="712" height="964" center cover responsive loading="eager"
+      <img src="/images/hero/elements/lefttop_small.webp" alt="AITS" width="712" height="964" center cover responsive preload
       v-motion  
         :initial="{
           transform: 'translate(0%)',
@@ -100,18 +67,37 @@ useHead({
           },
         }" class="absolute top-0 left-0 z-3 max-sm:top-20 max-sm:h-[400px] overflow-hidden" />
 
-      <NuxtImg src="/images/hero/elements/leftmiddle_small.webp" alt="AITS" width="824" height="1096" center cover responsive loading="eager"
-      class="absolute left-0 z-1 md:top-1/2 top-2/3 max-sm:h-[400px]"/>
-      <NuxtImg src="/images/hero/elements/leftmiddleoposite_small.webp" alt="AITS" width="962" height="1753" center cover responsive loading="eager"
-      class="absolute left-0 z-1 md:top-1/2 top-2/3 max-sm:h-[400px]"/>    
-      <NuxtImg src="/images/hero/elements/leftbottom_small.webp" alt="AITS" width="616" height="1104" center cover responsive loading="eager"
+      <img src="/images/hero/elements/leftmiddle_small.webp" alt="AITS" width="824" height="1096" center cover responsive preload
+      class="absolute left-0 transform md:-translate-y-1/2 z-1 md:top-1/2 top-2/3 -translate-y-2/3  max-sm:h-[400px]"/>
+      <img src="/images/hero/elements/leftmiddleoposite_small.webp" alt="AITS" width="962" height="1753" center cover responsive preload
+      class="absolute left-0 transform md:-translate-y-1/2 z-1 md:top-1/2 top-2/3 -translate-y-2/3 max-sm:h-[400px]"/>    
+      <img src="/images/hero/elements/leftbottom_small.webp" alt="AITS" width="616" height="1104" center cover responsive preload
       class="absolute left-0 z-3 top-[100%]"/>
  
       <!-- right layer -->
-      <NuxtImg src="/images/hero/elements/righttop_small.webp" alt="AITS" width="720" height="749" 
-      class="absolute right-0 lg:top-1/4 top-0 z-[-1]" center cover responsive loading="eager" />
- 
-      <NuxtImg src="/images/hero/elements/rightmiddle_small.webp" alt="AITS" width="720" height="1151" center cover responsive loading="eager"
+      <img src="/images/hero/elements/righttop_small.webp" alt="AITS" width="720" height="749" 
+      class="min-h-screen w-screen absolute right-0 lg:top-1/4 lg:-translate-y-1/4 top-0 z-[-1]" center cover responsive preload />
+      <!-- v-motion  
+        :initial="{
+          position: 'absolute',
+          top: '0',
+          right: '0',
+          transform: 'translate(0%, 0%)',
+          zIndex: 3,
+          x:0,
+          y:0,
+        }"
+        :visibleOnce="{
+          transform: 'translate(50%, -50%)',
+          x:0,
+          y:0,
+          transition: {
+            type: 'spring',
+            delay: 1100,
+            duration: 4000
+          },
+        }" -->
+      <img src="/images/hero/elements/rightmiddle_small.webp" alt="AITS" width="720" height="1151" center cover responsive preload
       v-motion  
         :initial="{
           position: 'absolute',
@@ -134,8 +120,8 @@ useHead({
         }"/>    
       
       <!-- pattern -->
-      <NuxtImg src="/images/patterns/patternhero.webp" alt="AITS" width="626" height="1394" center cover responsive loading="eager"
-      class="absolute z-[-1] right-0 top-1/3 opacity-75"/>
+      <img src="/images/patterns/patternhero.webp" alt="AITS" width="626" height="1394" center cover responsive preload
+      class="absolute z-[-1] right-0 top-1/3 transform -translate-y-1/3 opacity-75"/>
 
   </section>
 </template>
