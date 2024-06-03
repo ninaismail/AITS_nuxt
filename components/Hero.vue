@@ -103,26 +103,7 @@ useHead({
       <!-- right layer -->
       <NuxtImg src="/images/hero/elements/righttop_small.webp" alt="AITS" width="720" height="749" 
       class="min-h-screen w-screen absolute right-0 lg:top-1/4 lg:-translate-y-1/4 top-0 z-[-1]" center cover responsive loading="eager" />
-      <!-- v-motion  
-        :initial="{
-          position: 'absolute',
-          top: '0',
-          right: '0',
-          transform: 'translate(0%, 0%)',
-          zIndex: 3,
-          x:0,
-          y:0,
-        }"
-        :visibleOnce="{
-          transform: 'translate(50%, -50%)',
-          x:0,
-          y:0,
-          transition: {
-            type: 'spring',
-            delay: 1100,
-            duration: 4000
-          },
-        }" -->
+ 
       <NuxtImg src="/images/hero/elements/rightmiddle_small.webp" alt="AITS" width="720" height="1151" center cover responsive loading="eager"
       v-motion  
         :initial="{
