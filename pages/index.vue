@@ -2,8 +2,7 @@
 import Hero from '../components/Hero'
 import OneImageTextFlex from '../components/OneImageTextFlex.vue';
 import ContactUs from '~/components/ContactUs.vue';
-import { useSeoMeta } from '@unhead/vue'
-import { useHead } from '#app';
+import { useHead,useSeoMeta } from '@unhead/vue'
 
 const image1Url = '/images/hero/elements/centermiddle.webp';
 const image2Url = '/images/hero/elements/leftmiddle (1).webp';
